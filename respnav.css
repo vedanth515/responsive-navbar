@@ -1,0 +1,104 @@
+
+.maindiv{
+    width: 100%;
+    display: flex;
+    justify-content:space-around;
+    align-items: center;
+    background-color: lightpink;
+}
+
+.subdiv{
+    display: flex;
+    gap:50px;
+    align-items: center;
+}
+
+img{
+    width:10vw;
+    height: 10vh;
+    border-radius: 50%;
+}
+
+.input-checkbox-toggler{
+    display: none;
+}
+.ham-icon{
+    display: none;
+}
+
+@media screen and  (min-width:0px) and (max-width: 400px) {
+    .maindiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .subdiv {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+
+}
+
+@media screen and  (min-width:410) and (max-width: 768px) {
+    .maindiv {
+        width:100%;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .subdiv {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 25px;
+    }
+
+
+}
+
+
+@media (min-width:769px) and (max-width:1024px) {
+    .maindiv {
+        flex-direction:row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .subdiv {
+        flex-direction:row;
+        align-items: center;
+        gap: 35px;
+    }
+
+    .subdiv span {
+        font-size: 20px;
+    }
+}
+
+@media (min-width:1025px) and (max-width:1440px) {
+    .maindiv {
+        flex-direction:row;
+        align-items: center;
+        padding: 10px;
+    }
+
+    .subdiv {
+        flex-direction:row;
+        align-items: center;
+        gap: 45px;
+    }
+
+    .subdiv span {
+        font-size: 25px;
+    }
+}
+
+
+
